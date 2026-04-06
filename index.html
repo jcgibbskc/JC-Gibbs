@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       META & PAGE SETUP
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JC Gibbs | Tech Portfolio</title>
+
+  <!-- ============================================================
+       GOOGLE FONTS
+       Syne = bold display headings | Space Mono = techy mono accents
+       ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- ============================================================
+       MAIN STYLESHEET
+       ============================================================ -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION BAR
+       Fixed top nav with logo and links
+       ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">JC<span class="accent">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- Hamburger menu for mobile -->
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+       Full-screen intro with name, title, and CTA buttons
+       ============================================================ -->
+  <section class="hero" id="home">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-content">
+      <p class="hero-label">// Hello, World</p>
+      <h1 class="hero-name">JC <span class="accent">Gibbs</span></h1>
+      <h2 class="hero-title">Applied Business &amp; Technology</h2>
+      <p class="hero-tagline">
+        Web Developer · Network Admin · Technology<br /> 
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <!-- Resume download link — replace href when you have a PDF in /assets -->
+        <a href="assets/JC_Gibbs_Resume.pdf" download class="btn btn-outline">Download Resume</a>
+      </div>
+    </div>
+    <!-- Headshot photo -->
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-ring"></div>
+      <img src="images/photo2.jpg" alt="JC Gibbs headshot" class="hero-photo" />
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+       Short bio / summary paragraph
+       ============================================================ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Motivated and detail-oriented Applied Business and Technology student at
+            <strong>Kansas State University</strong>, blending tech skills with real-world
+            leadership experience. I bring entry-level expertise in network administration,
+            back-end development, and site performance optimization — plus a decade of
+            emergency medical services that built composure under pressure and decisive
+            critical thinking.
+          </p>
+          <p>
+            Currently interning at <strong>IC Stars Kansas City</strong>, building web
+            applications with SQL, JavaScript, Django, APIs, HTML and CSS. I'm passionate
+            about using technology as a tool for community impact.
+          </p>
+          <ul class="about-stats">
+            <li><span class="stat-num">3.515</span><span class="stat-label">Cumulative GPA</span></li>
+            <li><span class="stat-num">10+</span><span class="stat-label">Years of Experience</span></li>
+            <li><span class="stat-num">21+</span><span class="stat-label">Clients Supported</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+       Grouped skill chips by category
+       ============================================================ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+      <div class="skills-grid">
+
+        <!-- Skill Group 1 -->
+        <div class="skill-group">
+          <h3 class="skill-group-title">Programming &amp; Dev</h3>
+          <div class="skill-chips">
+            <span class="chip">HTML / CSS</span>
+            <span class="chip">Programming I & II</span>
+            <span class="chip">Computing Principles</span>
+            <span class="chip">SQL</span>
+            <span class="chip">APIs</span>
+            <span class="chip">Back-End Dev</span>
+            <span class="chip">Front-End Dev</span>
+            <span class="chip">Web Dev</span>
+
+          </div>
+        </div>
+
+        <!-- Skill Group 2 -->
+        <div class="skill-group">
+          <h3 class="skill-group-title">Systems &amp; Infrastructure</h3>
+          <div class="skill-chips">
+            <span class="chip">Network Administration</span>
+            <span class="chip">Hardware Fundamentals</span>
+            <span class="chip">Systems Administration</span>
+            <span class="chip">Database Management</span>
+            <span class="chip">Software Fundamentals</span>
+          </div>
+        </div>
+
+        <!-- Skill Group 3 -->
+        <div class="skill-group">
+          <h3 class="skill-group-title">Business &amp; Management</h3>
+          <div class="skill-chips">
+            <span class="chip">Operations Management</span>
+            <span class="chip">Financial Accounting</span>
+            <span class="chip">Marketing</span>
+            <span class="chip">Sales Management</span>
+            <span class="chip">Supervisory Management</span>
+          </div>
+        </div>
+
+        <!-- Skill Group 4 -->
+        <div class="skill-group">
+          <h3 class="skill-group-title">Design &amp; Communication</h3>
+          <div class="skill-chips">
+            <span class="chip">Visual Literacy</span>
+            <span class="chip">Technical Writing</span>
+            <span class="chip">User-Centered Design</span>
+            <span class="chip">Accessibility Standards</span>
+            <span class="chip">Leadership Studies</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WORK EXPERIENCE SECTION
+       Timeline of jobs — newest first
+       ============================================================ -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+      <div class="timeline">
+
+        <!-- Job 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jan 2026 – Present</span>
+            <h3>Technology Intern</h3>
+            <h4>IC Stars · Kansas City, MO</h4>
+            <ul>
+              <li>Built web-based applications to solve client challenges</li>
+              <li>Developed and executed test plans for sprint features</li>
+              <li>Identified, documented, and reported bugs</li>
+              <li>Used SQL, Excel, JavaScript, APIs, HTML, CSS, and Django</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jul 2022 – Present</span>
+            <h3>Freelance IT Support</h3>
+            <h4>Survival On the Home Front · Kansas City, MO</h4>
+            <ul>
+              <li>Technical support and network admin for 21+ entrepreneurs and nonprofits</li>
+              <li>Back-end and front-end web development for digital platforms</li>
+              <li>Administrative assistance to optimize operational efficiency</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Mar 2022 – Apr 2023</span>
+            <h3>Technology Intern</h3>
+            <h4>Blue Symphony · Kansas City, MO</h4>
+            <ul>
+              <li>Technical and administrative support via ticket-based system</li>
+              <li>Executed database queries, resolved bugs, enhanced site performance</li>
+              <li>Implemented user-centered design and accessibility standards</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Nov 2013 – Jun 2022</span>
+            <h3>Paramedic / EMT</h3>
+            <h4>Saint Luke's Community Hospital, KC Fire Dept, Northland Regional Ambulance, St Louis Fire Department</h4>
+            <ul>
+              <li>Advanced emergency medical care in pre-hospital environments</li>
+              <li>Life-saving interventions and critical patient assessments</li>
+              <li>Collaboration with emergency response teams</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 5 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Feb 2006 – Nov 2013</span>
+            <h3>EMT / IT Support</h3>
+            <h4>St. Louis Fire and EMS · St. Louis, MO</h4>
+            <ul>
+              <li>Pre-hospital emergency support alongside paramedics</li>
+              <li>Configured and installed computer systems and software</li>
+              <li>Network administration and IT infrastructure maintenance</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+       Card grid — swap placeholder images with real project screenshots
+       ============================================================ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <!-- Project Card 1 — replace src, title, description, and links -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <!-- PLACEHOLDER: replace with your actual project screenshot -->
+            <img src="/images/kcps_hub_login.png" alt="Login Screen" class="project-img" />
+                <div class="project-overlay">
+
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Client Web App</h3>
+            <p>A web-based application built during IC Stars internship to solve a real client problem using Django, HTML, and CSS.</p>
+            <div class="project-tags">
+              <span class="tag">Django</span><span class="tag">SQL</span><span class="tag">HTML/CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <!-- PLACEHOLDER: replace with your actual project screenshot -->
+            <img src="/images/Foley.png" alt="HTML/CSS" class="project-img" />
+                           <div class="project-overlay">
+
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Web Development</h3>
+            <p>Front-end and back-end development for a digital platform, enhancing accessibility and performance.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span><span class="tag">HTML/CSS</span><span class="tag">APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <!-- PLACEHOLDER: replace with your actual project screenshot -->
+            <img src="/images/task2-2jcgibbs.png" alt="SQL" class="project-img" />
+            <div class="project-overlay">
+           
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Database Management Tool</h3>
+            <p>Internal tool built to execute database queries and enhance site performance for business clients.</p>
+            <div class="project-tags">
+              <span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Excel</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <!-- PLACEHOLDER: replace with your actual project screenshot -->
+            <img src="/images/Cleaning_data.png" alt="Data Cleaning" class="project-img" />
+              <div class="project-overlay">
+
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Data Cleaning with JavaScript & JSON</h3>
+            <p>Manipulating and cleaning CSV files using JavaScript and JSON.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span><span class="tag">JSON</span><span class="tag">CSV</span>
+            </div>
+          </div>
+        </div>
+
+<!-- Project Card 5 -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <!-- PLACEHOLDER: replace with your actual project screenshot -->
+            <img src="/images/531Grand.png" alt="HTML/CSS" class="project-img" />
+                           <div class="project-overlay">
+
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Web Development</h3>
+            <p>Front-end and back-end development for a digital platform, enhancing accessibility and performance.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span><span class="tag">HTML/CSS</span><span class="tag">APIs</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EDUCATION SECTION
+       ============================================================ -->
+  <section class="section education" id="education">
+    <div class="container">
+      <h2 class="section-title">Edu<span class="accent">cation</span></h2>
+      <div class="edu-grid">
+
+        <div class="edu-card featured">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-details">
+            <h3>B.S. Applied Business &amp; Technology</h3>
+            <h4>Kansas State University · In Progress</h4>
+            <p>Technology Management Option · Manhattan, KS</p>
+            <p class="edu-gpa">Cumulative GPA: <strong>3.515</strong> · Semester Honors (multiple terms)</p>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon">⭐</div>
+          <div class="edu-details">
+            <h3>Technology Intern Program</h3>
+            <h4>IC Stars Kansas City</h4>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon">📚</div>
+          <div class="edu-details">
+            <h3>Pre-Nursing Transfer Credits</h3>
+            <h4>Hutchinson Community College</h4>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon">📚</div>
+          <div class="edu-details">
+            <h3>General Science Transfer Credits</h3>
+            <h4>Harris-Stowe State University &amp; Pitt Community College</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+       ============================================================ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <p class="contact-intro">I'm open to opportunities, collaborations, and conversations. Reach out!</p>
+      <div class="contact-links">
+        <a href="mailto:Amnu1976@gmail.com" class="contact-card">
+          <span class="contact-icon">✉</span>
+          <span>Amnu1976@gmail.com</span>
+        </a>
+        <a href="tel:5015162823" class="contact-card">
+          <span class="contact-icon">📱</span>
+          <span>501-516-2823</span>
+        </a>
+        <a href="https://jcgibbskc.github.io/" target="_blank" class="contact-card">
+          <span class="contact-icon">🔗</span>
+          <span>jcgibbskc.github.io</span>
+        </a>
+        <a href="https://github.com/jcgibbskc" target="_blank" class="contact-card">
+          <span class="contact-icon">🐙</span>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <p>© 2026 JC Gibbs · Built with HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT FILE
+       Handles nav scroll, mobile menu, animations
+       ============================================================ -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
